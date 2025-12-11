@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu Example</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* HEADER USING BLOCK */
+        header {
+            background-color: #1d3557;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            display: block;
+            /* block element */
+        }
+
+        /* NAVIGATION MENU USING INLINE-BLOCK */
+        nav ul {
+            list-style: none;
+            background: #457b9d;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            /* inline-block example */
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            display: inline;
+            /* inline example */
+        }
+
+        nav ul li a:hover {
+            background: #1d3557;
+            color: #fff;
+        }
+
+        /* SIDEBAR USING FLOAT */
+        .sidebar {
+            width: 25%;
+            background: #f1faee;
+            padding: 15px;
+            float: left;
+            /* float used here */
+            height: 300px;
+            box-sizing: border-box;
+        }
+
+        /* MAIN CONTENT */
+        .content {
+            width: 70%;
+            float: left;
+            /* float used here */
+            padding: 15px;
+            background: #f8f9fa;
+            box-sizing: border-box;
+        }
+
+        /* CLEAR FIX */
+        footer {
+            clear: both;
+            /* clears float */
+            background: #1d3557;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Website Navigation</h1>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sidebar + Content -->
+    <div class="sidebar">
+        <h3>Sidebar Menu</h3>
+        <p>Floating left using float property.</p>
+    </div>
+
+    <div class="content">
+        <h2>Main Content Area</h2>
+        <p>This section is floated left as well.
+            Inline, block, and inline-block are used above in the menu.</p>
+    </div>
+
+    <footer>
+        <p>Footer (uses clear to stop float overlap)</p>
+    </footer>
+
+</body>
+
+</html>
