@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body style="text-align:center;">
+
+<h2>Student Result</h2>
+
+<input id="s1" placeholder="Subject 1"><br>
+<input id="s2" placeholder="Subject 2"><br>
+<input id="s3" placeholder="Subject 3"><br>
+<input id="s4" placeholder="Subject 4"><br>
+<input id="s5" placeholder="Subject 5"><br><br>
+
+<button onclick="result()">Calculate</button>
+
+<div id="output" style="
+    margin-top:20px;
+    display:inline-block;
+    padding:10px;
+    border:2px solid black;
+"></div>
+
+<script>
+function result() {
+    let a = Number(document.getElementById("s1").value);
+    let b = Number(document.getElementById("s2").value);
+    let c = Number(document.getElementById("s3").value);
+    let d = Number(document.getElementById("s4").value);
+    let e = Number(document.getElementById("s5").value);
+
+    let total = a + b + c + d + e;
+    let per = total / 5;
+
+    let res;
+
+    if (per >= 75)
+        res = "First class";
+    else if (per >= 55)
+        res = "Second class";
+    else
+        res = "Fail";
+
+    
+}
+</script>
+
+</body>
+</html>
