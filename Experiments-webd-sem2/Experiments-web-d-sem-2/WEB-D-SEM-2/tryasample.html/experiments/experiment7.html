@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>React Props Example</title>
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <style>
+
+
+
+
+
+
+
+    </style>
+
+
+
+
+
+
+</head>
+
+<body>
+
+    <div id="student_container"></div>
+    <script>
+        const students = [
+            {
+                name: "PALAK SINGH",
+                course: "Computer Science",
+                marks: 85,
+
+            },
+            {
+                name: "JHALAK SINGH",
+                course: "Information Technology",
+                marks: " 92",
+
+            },
+            {
+                name: "AYUSH KUMAR",
+                course: "Electronics",
+                marks: "78",
+            }
+        ];
+
+        const student_container = ReactDOM.createRoot(document.getelEmentById("student container"));
+        students.forEach((student, index))
+
+
+    </script>
+
+    <script type="text/babel">
+
+        function Welcome(props) {
+            return <h2>Hello {props.name}</h2>;
+        }
+
+        function App() {
+            return (
+                <div>
+                    <Welcome name="Rahul" />
+                    <Welcome name="Anita" />
+                    <Welcome name="Rohan" />
+                </div>
+            );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(<App />);
+
+    </script>
+
+</body>
+
+</html>
